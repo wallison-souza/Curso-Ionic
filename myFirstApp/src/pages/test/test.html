@@ -1,0 +1,18 @@
+<ion-header>
+    <ion-navbar>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>Test</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content padding>
+      <h2>Lista de usuários</h2>
+      <ion-list>
+          <button ion-item *ngFor = "let u of users">
+            {{ u.user }}
+          </button>
+        </ion-list>
+  </ion-content>
+  
