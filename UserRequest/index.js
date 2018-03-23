@@ -9,7 +9,7 @@ app.get('/users/', (req, res)=> {
 })
 
 app.get('/users/:id', (req, res) => {
-    //res.json(data.users[req.params.id])
+    res.json(data.users[req.params.id])
     res.json(req);
 })
 
